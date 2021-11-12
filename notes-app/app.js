@@ -8,4 +8,4 @@ console.log(sum(2, 6))
 console.log(getNotes())
 
 console.log(validator.isURL('https://www.mail.com'))
-console.log(chalk.green.bgRedBright.bold('Success!'))
+console.log(chalk.red.bgBlue.bold('Success!'))
