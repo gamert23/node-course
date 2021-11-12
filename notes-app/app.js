@@ -1,6 +1,11 @@
-const fs =  require('fs')
 
-fs.writeFileSync('notes.txt', 'My name is Game.')
+const validator = require('validator')
+const chalk = require('chalk')
+const sum = require('./utils')
+const getNotes = require('./notes')
 
-// Append file
-fs.appendFileSync('notes.txt', "I'm 27 years old.")
+console.log(sum(2, 6))
+console.log(getNotes())
+
+console.log(validator.isURL('https://www.mail.com'))
+console.log(chalk.green.bgRedBright.bold('Success!'))
